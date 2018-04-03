@@ -63,7 +63,7 @@ export class PushButtonYipYipComponent {
     @Watch('buttonPushed')
     buttonHasBeenPushedYipYip(newValue: boolean, /* oldValue: boolean */) {
         if (newValue) {
-            this.buttonIconSrc = 'http://i0.kym-cdn.com/photos/images/original/000/099/471/durrhurrplz20110725-22047-1pezusu.png';
+            this.buttonIconSrc = 'https://jcw87.github.io/c2-sans-fight/icon-256.png';
         } else {
             this.buttonIconSrc = this.initialButtonIconSrc;
         }
