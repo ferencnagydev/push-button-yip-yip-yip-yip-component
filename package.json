@@ -1,6 +1,6 @@
 {
   "name": "push-button-yip-yip-yip-yip-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "YEP YEP YEP YEP YEP",
   "main": "dist/pushbuttonyipyipyipyipcomponent.js",
   "types": "dist/types/index.d.ts",
