@@ -35,7 +35,7 @@ export class PushButtonYipYipComponent {
                 <div>
                     <button class="btn btn-primary" onClick={this.handleClick.bind(this)}>
                         <img class="button-icon" src={this.buttonIconSrc} />
-                        PUSH BUTTON
+                        <slot/>
                     </button>
                 </div>
             );
@@ -48,7 +48,7 @@ export class PushButtonYipYipComponent {
                         <img
                             class="button-icon"
                             src={this.buttonIconSrc} />
-                        YIP YIP YIP YIP YIP YIP !
+                        <slot/>
                     </button>
                     <p>
                         <img
