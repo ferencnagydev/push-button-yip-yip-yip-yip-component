@@ -3,6 +3,9 @@
  * It contains typing information for all components that exist in this project
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
+
+import '@stencil/core';
+
 declare global {
   namespace JSX {
     interface Element {}
@@ -21,12 +24,11 @@ declare global {
 }
 
 
-import {
-  PushButtonYipYipComponent as PushButtonYipYipComponent
-} from './components/push-button-yip-yip-component/push-button-yip-yip-component';
-
 declare global {
-  interface HTMLPushButtonYipYipComponentElement extends PushButtonYipYipComponent, HTMLStencilElement {
+  interface HTMLPushButtonYipYipComponentElement extends HTMLStencilElement {
+    'buttonIconSrc': string;
+    'extraHiddenContentSrc': string;
+    'hiddenContentSrc': string;
   }
   var HTMLPushButtonYipYipComponentElement: {
     prototype: HTMLPushButtonYipYipComponentElement;
@@ -46,8 +48,36 @@ declare global {
   namespace JSXElements {
     export interface PushButtonYipYipComponentAttributes extends HTMLAttributes {
       'buttonIconSrc'?: string;
+      'extraHiddenContentSrc'?: string;
       'hiddenContentSrc'?: string;
-      
+      'onHiddenContentClicked'?: (event: CustomEvent) => void;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLReactionComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLReactionComponentElement: {
+    prototype: HTMLReactionComponentElement;
+    new (): HTMLReactionComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'reaction-component': HTMLReactionComponentElement;
+  }
+  interface ElementTagNameMap {
+    'reaction-component': HTMLReactionComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'reaction-component': JSXElements.ReactionComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ReactionComponentAttributes extends HTMLAttributes {
+
     }
   }
 }

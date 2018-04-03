@@ -1,6 +1,6 @@
 exports.config = {
   namespace: 'pushbuttonyipyipyipyipcomponent',
-  outputTargets:[{type: 'dist'}]
+  outputTargets:[{type: 'www'}]
 };
 
 exports.devServer = {
