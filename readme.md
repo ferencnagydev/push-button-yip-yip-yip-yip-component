@@ -7,5 +7,5 @@ Reaction won't be missed!
 
 
 ## Using this component
-- Put a script tag similar to this `<script src='https://unpkg.com/push-button-yip-yip-yip-yip-component@0.0.1/dist/pushbuttonyipyipyipyipcomponent.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/push-button-yip-yip-yip-yip-component@0.0.7/dist/pushbuttonyipyipyipyipcomponent.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
